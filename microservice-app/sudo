@@ -1,0 +1,23 @@
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; preset: enabled)
+     Active: active (running) since Sat 2025-06-21 13:48:24 CEST; 8s ago
+ Invocation: 63753a53063e4044a10186734d64642b
+TriggeredBy: ● docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 42870 (dockerd)
+      Tasks: 14
+     Memory: 24.4M (peak: 25.3M)
+        CPU: 260ms
+     CGroup: /system.slice/docker.service
+             └─42870 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Jun 21 13:48:23 oleg-QEMU-Virtual-Machine dockerd[42870]: time="2025-06-21T13:48:23.884212989+02:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Jun 21 13:48:23 oleg-QEMU-Virtual-Machine dockerd[42870]: time="2025-06-21T13:48:23.896249380+02:00" level=info msg="Loading containers: start."
+Jun 21 13:48:24 oleg-QEMU-Virtual-Machine dockerd[42870]: time="2025-06-21T13:48:24.328686292+02:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Jun 21 13:48:24 oleg-QEMU-Virtual-Machine dockerd[42870]: time="2025-06-21T13:48:24.410019254+02:00" level=warning msg="error locating sandbox id 66912ddea567a5a9da67d77ee7769e3c09a44b0c8794874249e49bcef9408dcb: sandbox 66912ddea567a5a9da67d77ee7769e3c09a44b0c8794874249e49bcef9408dcb not found"
+Jun 21 13:48:24 oleg-QEMU-Virtual-Machine dockerd[42870]: time="2025-06-21T13:48:24.410036087+02:00" level=warning msg="error locating sandbox id 90f16c8e604fd7995d8f07eed213c72d312a06d86b3e38605b2ece9b5c103564: sandbox 90f16c8e604fd7995d8f07eed213c72d312a06d86b3e38605b2ece9b5c103564 not found"
+Jun 21 13:48:24 oleg-QEMU-Virtual-Machine dockerd[42870]: time="2025-06-21T13:48:24.410280627+02:00" level=info msg="Loading containers: done."
+Jun 21 13:48:24 oleg-QEMU-Virtual-Machine dockerd[42870]: time="2025-06-21T13:48:24.422351685+02:00" level=info msg="Docker daemon" commit=27.5.1-0ubuntu3 containerd-snapshotter=false storage-driver=overlay2 version=27.5.1
+Jun 21 13:48:24 oleg-QEMU-Virtual-Machine dockerd[42870]: time="2025-06-21T13:48:24.422405768+02:00" level=info msg="Daemon has completed initialization"
+Jun 21 13:48:24 oleg-QEMU-Virtual-Machine dockerd[42870]: time="2025-06-21T13:48:24.430528681+02:00" level=info msg="API listen on /run/docker.sock"
+Jun 21 13:48:24 oleg-QEMU-Virtual-Machine systemd[1]: Started docker.service - Docker Application Container Engine.
